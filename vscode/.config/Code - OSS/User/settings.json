@@ -1,0 +1,55 @@
+{
+  "window.zoomLevel": 0,
+  "workbench.startupEditor": "newUntitledFile",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.minimap.enabled": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "prettier.singleQuote": true,
+  "highlight-matching-tag.styles": {
+    "opening": {
+      "left": {
+        "custom": {
+          "borderWidth": "0 0 0 3px",
+          "borderStyle": "solid",
+          "borderColor": "#05668D",
+          "borderRadius": "5px"
+          //"overviewRulerColor": "white"
+        }
+      },
+      "right": {
+        "custom": {
+          "borderWidth": "0 3px 0 0",
+          "borderStyle": "solid",
+          "borderColor": "#05668D",
+          "borderRadius": "5px"
+          //"overviewRulerColor": "white"
+        }
+      }
+    }
+  },
+  "javascript.suggest.completeFunctionCalls": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "window.menuBarVisibility": "toggle",
+  "workbench.activityBar.visible": false,
+  "workbench.editor.showTabs": true,
+  "workbench.editor.enablePreview": false,
+  "explorer.openEditors.visible": 10,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.overviewRulerBorder": false,
+  "workbench.colorTheme": "Night Owl (No Italics)"
+  // "emmet.syntaxProfiles": {
+  //   "javascript": "jsx"
+  // },
+  // "emmet.triggerExpansionOnTab": true,
+  // "editor.quickSuggestions": true
+}
