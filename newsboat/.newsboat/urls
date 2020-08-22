@@ -1,23 +1,31 @@
 -----------linux-related-------------
 https://lukesmith.xyz/rss.xml
-https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "yt"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "youtube"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg "youtube"
 https://itsfoss.com/feed/ "~It's Foss"
 https://opensource.com/feed 
 https://hackaday.com/blog/feed
 ----------real-world-news------------
-http://feeds.bbci.co.uk/turkce/rss.xml "news"
-http://bigpara.hurriyet.com.tr/rss/ "news"
-https://tr.investing.com/rss/forex.rss "news"
+http://feeds.bbci.co.uk/turkce/rss.xml "n"
 https://nitter.net/ismailsaymaz/rss "tw" "~İsmail Saymaz"
 https://nitter.net/cuneytozdemir/rss "tw" "~Cüneyt Özdemir"
 ----------web-development-----------
-https://www.youtube.com/feeds/videos.xml?channel_id=UCFbNIlppjAuEX4znoulh0Cw "yt"
-https://www.freecodecamp.org/news/rss/ "~FreeCodeCamp"
--------------developer--------------
-https://www.geeksforgeeks.org/feed/ "dev"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCFbNIlppjAuEX4znoulh0Cw "web-dev"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC29ju8bIPH5as8OGnQzwJyA "web-dev"
+https://www.youtube.com/feeds/videos.xml?channel_id=UClb90NQQcskPUGDIXsQEz5Q "web-dev"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCW5YeuERMmlnqo4oq8vwUpg "web-dev"
+https://www.scriptbarrel.com/xml.cgi?channel_id=UC80PWRj_ZU8Zu0HSMNVwKWw&name=Codevolution "web-dev" "~Codevolution"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCO1cgjhGzsSYb1rsB4bFe4Q "web-dev"
+https://www.scriptbarrel.com/xml.cgi?channel_id=UCJZv4d5rbIKd4QHMPkcABCw&name=Kevin%20Powell "web-dev" "~Kevin-Powell"
+-------web-dev-playlists------------
+https://www.youtube.com/feeds/videos.xml?playlist_id=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3 "react-tutorials" 
+https://www.youtube.com/feeds/videos.xml?playlist_id=
+https://www.youtube.com/feeds/videos.xml?playlist_id=
+https://www.youtube.com/feeds/videos.xml?playlist_id=
+https://www.youtube.com/feeds/videos.xml?playlist_id=
 -------------git-repos--------------
 https://gitlab.com/dwt1.atom 
 https://github.com/LukeSmithxyz.atom 
-
+-------------tech-channels----------
+https://www.youtube.com/feeds/videos.xml?channel_id=UCXuqSBlHAE6Xw-yeJA0Tunw "youtube"
 
