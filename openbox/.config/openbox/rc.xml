@@ -585,13 +585,13 @@
         <command>firefox</command>
       </action>
     </keybind>
-     <keybind key="A-s">
+    <keybind key="A-s">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
           <name>Google</name>
         </startupnotify>
-	<command>/bin/sh /home/anomy/Scripts/rofi-scripts/web-search.sh -b firefox</command>
+        <command>/bin/sh /home/anomy/Scripts/rofi-scripts/web-search.sh -b firefox</command>
       </action>
     </keybind>
     <keybind key="A-e">
@@ -612,8 +612,6 @@
         <command>thunderbird</command>
       </action>
     </keybind>
-
-
     <keybind key="S-W-k">
       <action name="Execute">
         <startupnotify>
@@ -1044,10 +1042,9 @@
     # change that attribute of the window
     -->
   <application class="*">
-	
-	  <decor>no</decor>
-  </application>
-  <!--
+      <decor>no</decor>
+    </application>
+    <!--
     # enable or disable window decorations
 
     <shade>no</shade>
