@@ -143,5 +143,4 @@ alias yta-vorbis="youtube-dl --extract-audio --audio-format vorbis "
 alias yta-wav="youtube-dl --extract-audio --audio-format wav "
 
 alias ytv-best="youtube-dl -f bestvideo+bestaudio"
-alias pomo='sleep 1 && notify-send "break" && paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga; sleep 10 && notify-send "back to work" --urgency=critical && paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga &'
 alias pom='sleep 1500 && notify-send "break" && paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga; sleep 300 && notify-send "back to work" --urgency=critical && paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga &'
