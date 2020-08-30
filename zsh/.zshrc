@@ -144,3 +144,6 @@ alias yta-wav="youtube-dl --extract-audio --audio-format wav "
 
 alias ytv-best="youtube-dl -f bestvideo+bestaudio"
 alias pom='sleep 1500 && notify-send "break" && paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga; sleep 300 && notify-send "back to work" --urgency=critical && paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga &'
+alias shut10="shutdown -h +10"
+alias shut5="shutdown -h +5"
+alias poly="~/.config/polybar/launch.sh"
