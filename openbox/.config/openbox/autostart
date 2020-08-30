@@ -1,4 +1,4 @@
 nitrogen --restore &
 compton &
-tint2 &
+~/.config/polybar/launch.sh &
 numlockx &

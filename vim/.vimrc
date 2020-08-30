@@ -40,6 +40,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'flazz/vim-colorschemes'
 Plug 'tomasiser/vim-code-dark'
 Plug '/home/mpaulson/personal/vim-be-good'
+"goyo plugin for writing
+Plug 'junegunn/goyo.vim'
 "latex-live-preview
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 call plug#end()
