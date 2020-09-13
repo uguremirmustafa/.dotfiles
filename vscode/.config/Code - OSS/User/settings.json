@@ -47,7 +47,8 @@
   "editor.scrollbar.vertical": "hidden",
   "editor.overviewRulerBorder": false,
   "terminal.external.linuxExec": "st",
-  "workbench.colorTheme": "Night Owl (No Italics)"
+  "workbench.colorTheme": "Night Owl (No Italics)",
+  "prettier.printWidth": 160
   // "emmet.syntaxProfiles": {
   //   "javascript": "jsx"
   // },

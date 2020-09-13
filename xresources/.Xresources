@@ -1,0 +1,67 @@
+! Adjusting the font
+!*faceName: Monospace
+!*faceSize: 14
+! URxvt*font: xft:Terminess Monofur:size=12
+urxvt*font: xft:Bitstream Vera Sans Mono:style=Regular:size=10
+! adjusting font size on the fly is required extension. i use "urxvt-resize-font".
+urxvt.perl-ext-common: default,resize-font
+! remapping font size changer keys to ctrl^j-k
+URxvt.resize-font.smaller: C-j
+URxvt.resize-font.bigger:  C-k
+
+! Adding inner padding to the terminal between border and text
+URxvt.internalBorder:  12
+
+! Decreasing letterspace 1 px
+URxvt.letterSpace: -1
+
+! Adding a scroll-bar on the right side
+urxvt*scrollBar: false
+urxvt*rightScrollBar:true
+ 
+! prevent jumping back to the last line with new output
+urxvt*scrollTtyOutput: false
+ 
+! add keyboard shortcuts to jump to beginning/end
+urxvt*vt100.translations: #override \n\
+ Shift <Key>Home: scroll-forw(10000000000) \n\
+ Shift <Key>End: scroll-back(10000000000)
+
+
+! colors - gruvbox
+! -----------------------------------------------------------------------------
+! File: gruvbox-dark.xresources
+! Description: Retro groove colorscheme generalized
+! Author: morhetz <morhetz@gmail.com>
+! Source: https://github.com/morhetz/gruvbox-generalized
+! Last Modified: 6 Sep 2014
+! -----------------------------------------------------------------------------
+
+! hard contrast: *background: #1d2021
+*background: #282828
+! soft contrast: *background: #32302f
+*foreground: #ebdbb2
+! Black + DarkGrey
+*color0:  #282828
+*color8:  #928374
+! DarkRed + Red
+*color1:  #cc241d
+*color9:  #fb4934
+! DarkGreen + Green
+*color2:  #98971a
+*color10: #b8bb26
+! DarkYellow + Yellow
+*color3:  #d79921
+*color11: #fabd2f
+! DarkBlue + Blue
+*color4:  #458588
+*color12: #83a598
+! DarkMagenta + Magenta
+*color5:  #b16286
+*color13: #d3869b
+! DarkCyan + Cyan
+*color6:  #689d6a
+*color14: #8ec07c
+! LightGrey + White
+*color7:  #a89984
+*color15: #ebdbb2
