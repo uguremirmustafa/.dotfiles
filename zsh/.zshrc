@@ -98,8 +98,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias p='sudo pacman -Syu'
-alias r='sudo pacman -Rcns'
+alias p='sudo apt-get install'
+alias r='sudo apt-get remove'
 alias pa='yay -Syu'
 alias ra='yay -Rcns'
 alias ee='ranger'
