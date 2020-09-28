@@ -147,3 +147,4 @@ alias pom='sleep 1500 && notify-send "break" && paplay /usr/share/sounds/freedes
 alias shut10="shutdown -h +10"
 alias shut5="shutdown -h +5"
 alias poly="~/.config/polybar/launch.sh"
+alias dolar="node ~/.scripts/exchange-dolar/index.js"
