@@ -174,9 +174,9 @@ bindsym $mod+r mode "resize"
 #bar {
 #        status_command i3status
 #}
-#exec --no-startup-id xrandr --output HDMI-A-0 --scale 1.5x1.5 
 exec --no-startup-id sleep 15
 exec_always --no-startup-id xrandr --output DisplayPort-0 --primary --dpi 163.18 --mode 3840x2160 --pos 0x0 --rotate normal --output HDMI-A-0 --mode 1920x1080 --pos 3840x240 --rotate left --dpi 91.79  --output DVI-D-0 --off --output DVI-D-1 --off
+exec --no-startup-id xrandr --output HDMI-A-0 --scale 1.5x1.5 
 exec --no-startup-id sleep 15
 exec --no-startup-id compton 
 exec --no-startup-id ~/.config/polybar/launch.sh 
