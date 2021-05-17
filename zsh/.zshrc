@@ -98,8 +98,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias p='sudo apt-get install'
-alias r='sudo apt-get remove'
+alias p='sudo pacman -Syu'
+alias r='sudo pacman -Rcns'
 alias pa='yay -Syu'
 alias ra='yay -Rcns'
 alias ee='ranger'
@@ -148,3 +148,7 @@ alias shut10="shutdown -h +10"
 alias shut5="shutdown -h +5"
 alias poly="~/.config/polybar/launch.sh"
 alias dolar="node ~/.scripts/exchange-dolar/index.js"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
