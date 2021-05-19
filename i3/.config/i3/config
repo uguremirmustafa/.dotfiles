@@ -194,7 +194,7 @@ bindsym $mod+f fullscreen toggle
 # qwerty/azerty issue for letter z
 bindsym $mod+s layout stacking
 bindsym $mod+z layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+a layout toggle split
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
@@ -339,7 +339,7 @@ exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd &
 #not workspace related
 
 # thunar
-bindsym $mod+a exec --no-startup-id thunar
+bindsym $mod+e exec --no-startup-id thunar
 
 # new mail
 bindsym $mod+Shift+n exec --no-startup-id xdg-email
