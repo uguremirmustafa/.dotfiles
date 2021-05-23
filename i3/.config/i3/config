@@ -393,7 +393,7 @@ bindsym control+mod1+l exec --no-startup-id arcolinux-logout
 bindsym control+mod1+r exec --no-startup-id rofi-theme-selector
 
 # rofi fontawesome menu
-bindsym control+mod1+i exec --no-startup-id /home/anomy/.scripts/fontawesome-menu -f /home/anomy/.scripts/fa5-icon-list.txt
+bindsym $mod+i exec --no-startup-id /home/anomy/.scripts/fontawesome-menu -f /home/anomy/.scripts/fa5-icon-list.txt
 
 #pavucontrol
 #arcolinux conflict
