@@ -322,6 +322,9 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh &
 # fancontrol_gui
 exec --no-startup-id fancontrol_gui
 
+# dunst
+exec_always --no-startup-id /usr/bin/dunst -conf "~/.config/dunst/dunstrc" &
+
 #####################################################################################################################
 #################                                 system applications                               #################
 #####################################################################################################################
@@ -330,7 +333,7 @@ exec --no-startup-id xfce4-power-manager &
 # ommitted next line to get super key to bring up the menu in xfce and avoid error then in i3
 # IF xfsettingsd is activated you can not change themes
 #exec --no-startup-id xfsettingsd &
-exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd &
+#exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd &
 
 #####################################################################################################################
 #################                          applications keyboard shortcuts                          #################
@@ -389,7 +392,8 @@ bindsym control+mod1+l exec --no-startup-id arcolinux-logout
 #rofi theme selector
 bindsym control+mod1+r exec --no-startup-id rofi-theme-selector
 
-
+# rofi fontawesome menu
+bindsym control+mod1+i exec --no-startup-id /home/anomy/.scripts/fontawesome-menu -f /home/anomy/.scripts/fa5-icon-list.txt
 
 #pavucontrol
 #arcolinux conflict
