@@ -320,7 +320,7 @@ exec --no-startup-id volumeicon
 # exec --no-startup-id xfce4-clipman
 
 #feh sets wallpaper
-exec --no-startup-id feh --bg-fill /home/anomy/Pictures/wallpapers/gruvbox.jpg &
+exec_always --no-startup-id feh --bg-fill /home/anomy/Pictures/wallpapers/wallpapers/gruvbox/not-so-gruv-city.jpg &
 
 #Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
@@ -352,8 +352,11 @@ bindsym $mod+w exec --no-startup-id chromium
 # firefox
 bindsym $mod+f exec --no-startup-id firefox
 
+# ranger
+bindsym $mod+e exec --no-startup-id urxvt -e ranger
+
 # thunar
-bindsym $mod+e exec --no-startup-id thunar
+bindsym $mod+p exec --no-startup-id thunar
 
 # new mail
 bindsym $mod+Shift+n exec --no-startup-id xdg-email
@@ -428,7 +431,6 @@ bindsym --release $mod+Escape exec xkill
 #workspace related
 
 #workspace 1 related
-bindsym $mod+F1 exec --no-startup-id exo-open --launch webbrowser;focus
 
 #bindsym $mod+w exec --no-startup-id exo-open --launch webbrowser;focus
 

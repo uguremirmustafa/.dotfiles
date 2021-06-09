@@ -17,7 +17,7 @@ URxvt.iso14755: false
 URxvt.iso14755_52: false
 
 ! Adding inner padding to the terminal between border and text
-URxvt.internalBorder:  22
+URxvt.internalBorder:  60
 
 ! Decreasing letterspace 1 px
 URxvt.letterSpace: -1
