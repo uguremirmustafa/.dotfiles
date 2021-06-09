@@ -121,11 +121,6 @@ alias sd='sudo shutdown now'
 alias clock='tty-clock -c'
 alias rtv='rtv --enable-media'
 alias vim='vim'
-#get dolar price against turkish-lira
-alias dolar='curl -s -X GET https://openexchangerates.org/api/latest.json?app_id=3642de48d38848b88204ae81d827ee1c | grep TRY | cut -c12-18'
-#
-###get gold price
-alias altın='curl -s -X GET https://openexchangerates.org/api/latest.json?app_id=3642de48d38848b88204ae81d827ee1c | grep XAU | cut -c12-21'
 ##merge new settings
 alias merge="xrdb -merge ~/.Xresources"
 
@@ -151,7 +146,7 @@ alias pom='sleep 1500 && notify-send "break" && paplay /usr/share/sounds/freedes
 alias shut10="shutdown -h +10"
 alias shut5="shutdown -h +5"
 alias poly="~/.config/polybar/launch.sh"
-alias dolar="node ~/.scripts/exchange-dolar/index.js"
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

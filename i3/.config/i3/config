@@ -46,7 +46,7 @@ set $workspace3 "3: Figma"
 set $workspace4 "4: Files"
 set $workspace5 "5: Utils"
 set $workspace6 "6: Video"
-set $workspace7 "7: OBS"
+set $workspace7 "7: OBS | School"
 set $workspace8 "8: Zoom - Telegram"
 set $workspace9 "9: Mail"
 set $workspace10 "10: Music"
@@ -79,8 +79,11 @@ bindsym $mod+Shift+0 move container to workspace $workspace10; workspace $worksp
 #################                          3 menu's in arcolinux                                     #################
 #####################################################################################################################
 
+## #282828 -- dark gruvbox background color
+
+
 # start dmenu
-bindsym $mod+r exec --no-startup-id dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'SourceCodeProBold:bold:pixelsize=24'
+bindsym $mod+r exec --no-startup-id dmenu_run -i -l 10 -nb '#282828' -nf '#b8bb26' -sb '#b8bb26' -sf '#282828' -fn 'SourceCodeProBold:bold:pixelsize=24'
 
 #####################################################################################################################
 #################                          how to exit, logoff, suspend, ...                        #################
@@ -188,7 +191,7 @@ bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
 # Super + F in arcolinux is execute thunar
-bindsym $mod+f fullscreen toggle
+bindsym $mod+Shift+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 # qwerty/azerty issue for letter z
@@ -205,10 +208,10 @@ bindsym $mod+space focus mode_toggle
 #####################################################################################################################
 
 # Resizing by 1
-bindsym $mod+Mod1+Ctrl+Right resize shrink width 1 px or 1 ppt
-bindsym $mod+Mod1+Ctrl+Up resize grow height 1 px or 1 ppt
-bindsym $mod+Mod1+Ctrl+Down resize shrink height 1 px or 1 ppt
-bindsym $mod+Mod1+Ctrl+Left resize grow width 1 px or 1 ppt
+bindsym $mod+Mod1+Ctrl+Right resize shrink width 10 px or 10 ppt
+bindsym $mod+Mod1+Ctrl+Up resize grow height 10 px or 10 ppt
+bindsym $mod+Mod1+Ctrl+Down resize shrink height 10 px or 10 ppt
+bindsym $mod+Mod1+Ctrl+Left resize grow width 10 px or 10 ppt
 
 
 #####################################################################################################################
@@ -229,7 +232,7 @@ font pango:Source Code Pro Black 14
 # you can find the class with the program xprop
 
 # Workspace 1 browser related
-#assign [class="Firefox|Vivaldi-stable|Vivaldi-snapshot|Opera"]                      → $workspace1
+#assign [class="Vivaldi-stable|Vivaldi-snapshot|Opera"]                      → $workspace1
 assign [class="Chromium|Google-chrome"]                                           → $workspace1
 
 # Workspace 2 text editor related
@@ -240,7 +243,7 @@ assign [class="Xed|xed|Brackets|Atom|Code|Geany"]                               
 assign [class="figma-linux"]                                                            → $workspace3
 
 # Workspace 4 File Manager
-assign [class="Nemo|Thunar|Caja|nautilus|Nautilus"]                                → $workspace4
+assign [class="Nemo|Thunar|Caja|nautilus|Nautilus"]                            → $workspace4
 
 # Workspace 5 Images and meld
 # assign [class="ristretto|Ristretto|shotwell|Shotwell|Xviewer|Nitrogen"]             → $workspace5
@@ -252,7 +255,7 @@ assign [class="KeePassXC"]                                                      
 assign [class="Vlc|vlc|mpv"]                                                            → $workspace6
 
 # Workspace 7 virtual machines and settings
-assign [class="Vmplayer|obs"]			                        → $workspace7
+assign [class="Firefox|firefox|obs"]			                        → $workspace7
 
 # Workspace 8 Zoom and other messaging apps
 assign [class="zoom|TelegramDesktop"]                                                          → $workspace8
@@ -261,7 +264,7 @@ assign [class="zoom|TelegramDesktop"]                                           
 assign [class="Geary|Evolution|Thunderbird"]                                            → $workspace9
 
 # Workspace 10 music related
-assign [class="Spotify|spotify|Rhythmbox"]                                                    → $workspace10
+assign [class="Spotify|spotify|Rhythmbox|music"]                                                    → $workspace10
 #fix for spotify not moving to workspace 10
 #for_window [class="Spotify"] move to workspace 10
 
@@ -276,9 +279,12 @@ assign [class="Spotify|spotify|Rhythmbox"]                                      
 # Autotiling
 exec_always --no-startup-id autotiling
 
-#browser
+# browser
 #exec --no-startup-id vivaldi-stable
 for_window [class="Chrome"] focus
+
+# file manager
+for_window [class="Thunar"] focus
 
 # TRAY APPLICATIONS
 
@@ -314,7 +320,7 @@ exec --no-startup-id volumeicon
 # exec --no-startup-id xfce4-clipman
 
 #feh sets wallpaper
-exec --no-startup-id feh --bg-fill /home/anomy/Pictures/wallpapers/purple.jpg &
+exec --no-startup-id feh --bg-fill /home/anomy/Pictures/wallpapers/gruvbox.jpg &
 
 #Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
@@ -343,20 +349,28 @@ exec --no-startup-id xfce4-power-manager &
 # chromium
 bindsym $mod+w exec --no-startup-id chromium
 
+# firefox
+bindsym $mod+f exec --no-startup-id firefox
+
 # thunar
 bindsym $mod+e exec --no-startup-id thunar
 
 # new mail
 bindsym $mod+Shift+n exec --no-startup-id xdg-email
 
-# Rhythmbox
-bindsym $mod+m exec --no-startup-id rhythmbox
+# cmus
+bindsym $mod+m exec --no-startup-id urxvt -e cmus
+
+# pavucontrol
 
 # OBS
 bindsym $mod+o exec --no-startup-id obs
 
 # Vscode
 bindsym $mod+d exec --no-startup-id code
+
+# Edit dotfiles with vscode
+bindsym $mod+Shift+d exec --no-startup-id code /home/anomy/.dotfiles
 
 # Thunderbird
 bindsym $mod+n exec --no-startup-id thunderbird
@@ -369,12 +383,12 @@ bindsym $mod+k exec --no-startup-id keepassxc
 
 
 # terminal
-bindsym $mod+Return exec --no-startup-id kitty;focus
-bindsym $mod+KP_Enter exec --no-startup-id kitty;focus
-bindsym control+mod1+t exec --no-startup-id kitty; focus
-bindsym control+mod1+Return exec --no-startup-id kitty floating enabled; focus
-bindsym control+mod1+KP_Enter exec --no-startup-id kitty; focus
-bindsym F12 exec --no-startup-id kitty --drop-down; focus
+bindsym $mod+Return exec --no-startup-id urxvt;focus
+bindsym $mod+KP_Enter exec --no-startup-id urxvt;focus
+bindsym control+mod1+t exec --no-startup-id urxvt; focus
+bindsym control+mod1+Return exec --no-startup-id urxvt floating enabled; focus
+bindsym control+mod1+KP_Enter exec --no-startup-id urxvt; focus
+bindsym F12 exec --no-startup-id urxvt --drop-down; focus
 
 #System monitor
 bindsym control+Shift+Escape exec --no-startup-id xfce4-taskmanager;focus
@@ -397,7 +411,7 @@ bindsym $mod+i exec --no-startup-id /home/anomy/.scripts/fontawesome-menu -f /ho
 
 #pavucontrol
 #arcolinux conflict
-bindsym control+mod1+u exec --no-startup-id pavucontrol
+bindsym $mod+F9 exec --no-startup-id pavucontrol
 
 # start xfce-appfinder
 #arcolinux does not seem to work
@@ -528,7 +542,7 @@ for_window [window_role="setup"] floating enable
 for_window [class="Gnome-terminal"] focus
 for_window [class="Termite"] focus
 for_window [class="Terminator"] focus
-for_window [class="kitty"] focus
+for_window [class="urxvt"] focus
 for_window [class="Chromium"] focus
 for_window [class="Rhythmbox"] focus
 
@@ -747,16 +761,16 @@ bindsym control+mod1+o exec --no-startup-id ~/.config/i3/scripts/picom-toggle.sh
 
 ### define devugur colors ###
 
-set $pink "#F56565"
-set $white "#FFFFFF"
-set $black "#000000"
-set $gray "#3F3D56"
-set $purple "#5455F0"
-set $somon "#C75D59"
+set_from_resource $pink color5
+set_from_resource $white foreground
+set_from_resource $black background
+set_from_resource $gray color15
+set_from_resource $green color4
+set_from_resource $somon color13
 
 
 # class                 border  backgr. text    indicator child_border
-client.focused          $purple $purple $white  $purple   $purple
+client.focused          $green $green $white  $green   $green
 client.focused_inactive #333333 #5f676a #ffffff #484e50   $black
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   $pink

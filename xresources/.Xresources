@@ -3,15 +3,21 @@
 !*faceName: Monospace
 !*faceSize: 14
 ! URxvt*font: xft:Terminess Monofur:size=12
-urxvt*font: xft:Bitstream Vera Sans Mono:style=Regular:size=10
+urxvt*font: xft:Source Code Pro Black:style=Regular:size=12
 ! adjusting font size on the fly is required extension. i use "urxvt-resize-font".
 urxvt.perl-ext-common: default,resize-font
 ! remapping font size changer keys to ctrl^j-k
 URxvt.resize-font.smaller: C-j
 URxvt.resize-font.bigger:  C-k
 
+! Restore Ctrl+Shift+(c|v)
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
 ! Adding inner padding to the terminal between border and text
-URxvt.internalBorder:  12
+URxvt.internalBorder:  22
 
 ! Decreasing letterspace 1 px
 URxvt.letterSpace: -1
@@ -28,15 +34,6 @@ urxvt*vt100.translations: #override \n\
  Shift <Key>Home: scroll-forw(10000000000) \n\
  Shift <Key>End: scroll-back(10000000000)
 
-
-! colors - gruvbox
-! -----------------------------------------------------------------------------
-! File: gruvbox-dark.xresources
-! Description: Retro groove colorscheme generalized
-! Author: morhetz <morhetz@gmail.com>
-! Source: https://github.com/morhetz/gruvbox-generalized
-! Last Modified: 6 Sep 2014
-! -----------------------------------------------------------------------------
 
 ! hard contrast: *background: #1d2021
 *background: #282828
