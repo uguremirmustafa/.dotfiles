@@ -320,7 +320,7 @@ exec --no-startup-id volumeicon
 # exec --no-startup-id xfce4-clipman
 
 #feh sets wallpaper
-exec_always --no-startup-id feh --bg-fill /home/anomy/Pictures/wallpapers/wallpapers/gruvbox/not-so-gruv-city.jpg &
+exec_always --no-startup-id feh --bg-fill /home/anomy/Pictures/wallpapers/wallpapers/buildings.jpg &
 
 #Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
@@ -599,6 +599,7 @@ bindsym $mod+t border normal
 bindsym $mod+y border 1pixel
 bindsym $mod+u border none
 
+hide_edge_borders smart
 
 # new_window pixel 4
 #new_window normal
@@ -628,7 +629,7 @@ popup_during_fullscreen smart
 
 
 for_window [class="^.*"] border pixel 1
-gaps inner 8
+gaps inner 4
 gaps outer 1
 #smart_gaps on
 #smart_borders on
