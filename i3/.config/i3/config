@@ -628,16 +628,17 @@ popup_during_fullscreen smart
 # want it
 
 
-for_window [class="^.*"] border pixel 1
-gaps inner 4
+for_window [class="^.*"] border pixel 0
+gaps inner 6
 gaps outer 1
 #smart_gaps on
 #smart_borders on
 
-
 #####################################################################################################################
 #################                          i3 gaps change                                           #################
 #####################################################################################################################
+
+gaps bottom 28
 
 set $mode_gaps Gaps: (o) outer, (i) inner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
@@ -684,7 +685,7 @@ mode "$mode_gaps_outer" {
 #####################################################################################################################
 
 #if you want transparency on non-focused windows, ...
-exec_always --no-startup-id picom --config ~/.config/i3/picom.conf
+exec_always --no-startup-id picom --experimental-backend --config ~/.config/i3/picom.conf
 
 bindsym control+mod1+o exec --no-startup-id ~/.config/i3/scripts/picom-toggle.sh
 
