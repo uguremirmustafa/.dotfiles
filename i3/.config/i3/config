@@ -384,6 +384,8 @@ bindsym $mod+c exec --no-startup-id zoom
 # KeePassXC
 bindsym $mod+k exec --no-startup-id keepassxc
 
+# restart polybar
+bindsym $mod+Shift+p exec --no-startup-id arcolinux-restart-polybar
 
 # terminal
 bindsym $mod+Return exec --no-startup-id urxvt;focus
@@ -628,7 +630,7 @@ popup_during_fullscreen smart
 # want it
 
 
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 1
 gaps inner 6
 gaps outer 1
 #smart_gaps on
@@ -685,7 +687,7 @@ mode "$mode_gaps_outer" {
 #####################################################################################################################
 
 #if you want transparency on non-focused windows, ...
-exec_always --no-startup-id picom --experimental-backend --config ~/.config/i3/picom.conf
+exec_always --no-startup-id picom --config ~/.config/i3/picom.conf
 
 bindsym control+mod1+o exec --no-startup-id ~/.config/i3/scripts/picom-toggle.sh
 
@@ -768,13 +770,13 @@ bindsym control+mod1+o exec --no-startup-id ~/.config/i3/scripts/picom-toggle.sh
 set_from_resource $pink color5
 set_from_resource $white foreground
 set_from_resource $black background
-set_from_resource $gray color15
-set_from_resource $green color4
+set_from_resource $grayy color15
+set_from_resource $gray color7
 set_from_resource $somon color13
 
 
 # class                 border  backgr. text    indicator child_border
-client.focused          $green $green $white  $green   $green
+client.focused          $gray $gray $white  $gray   $gray
 client.focused_inactive #333333 #5f676a #ffffff #484e50   $black
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   $pink
