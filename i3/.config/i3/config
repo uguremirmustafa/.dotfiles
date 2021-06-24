@@ -208,10 +208,10 @@ bindsym $mod+space focus mode_toggle
 #####################################################################################################################
 
 # Resizing by 1
-bindsym $mod+Mod1+Ctrl+Right resize shrink width 10 px or 10 ppt
-bindsym $mod+Mod1+Ctrl+Up resize grow height 10 px or 10 ppt
-bindsym $mod+Mod1+Ctrl+Down resize shrink height 10 px or 10 ppt
-bindsym $mod+Mod1+Ctrl+Left resize grow width 10 px or 10 ppt
+bindsym $mod+Mod1+Right resize shrink width 10 px or 10 ppt
+bindsym $mod+Mod1+Up resize grow height 10 px or 10 ppt
+bindsym $mod+Mod1+Down resize shrink height 10 px or 10 ppt
+bindsym $mod+Mod1+Left resize grow width 10 px or 10 ppt
 
 
 #####################################################################################################################
