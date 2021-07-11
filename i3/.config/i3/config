@@ -320,7 +320,7 @@ exec --no-startup-id volumeicon
 # exec --no-startup-id xfce4-clipman
 
 #feh sets wallpaper
-exec_always --no-startup-id feh --bg-fill /home/anomy/Pictures/wallpapers/wallpapers/buildings.jpg &
+exec_always --no-startup-id feh --bg-fill /home/anomy/.wall.jpg &
 
 #Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
