@@ -109,9 +109,21 @@ mode "$mode_system" {
 
 
 # ArcoLinux Logout
-bindsym $mod+Shift+e exec --no-startup-id arcolinux-logout
-bindsym $mod+X exec --no-startup-id arcolinux-logout
+# bindsym $mod+Shift+e exec --no-startup-id arcolinux-logout
+# bindsym $mod+x exec --no-startup-id i3-msg exit
 
+# Create Log out, Reboot, Poweroff bindings
+mode "Exit (L)ogout, (R)eboot, (P)oweroff" {
+        bindsym $mod+r exec systemctl reboot
+        bindsym $mod+l exit
+        bindsym $mod+p exec systemctl poweroff
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+x mode "Exit (L)ogout, (R)eboot, (P)oweroff"
 
 #####################################################################################################################
 #################                          reload changed configuration                             #################
@@ -265,6 +277,7 @@ assign [class="Geary|Evolution|Thunderbird"]                                    
 
 # Workspace 10 music related
 assign [class="Spotify|spotify|Rhythmbox|music"]                                                    → $workspace10
+# assign [instance="cmus"]                                                    → $workspace10
 #fix for spotify not moving to workspace 10
 #for_window [class="Spotify"] move to workspace 10
 
@@ -326,7 +339,7 @@ exec_always --no-startup-id feh --bg-fill /home/anomy/.wall.jpg &
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 
 # fancontrol_gui
-exec --no-startup-id fancontrol_gui
+# exec --no-startup-id fancontrol_gui
 
 # dunst
 exec_always --no-startup-id /usr/bin/dunst -conf "~/.config/dunst/dunstrc" &
@@ -356,7 +369,7 @@ bindsym $mod+f exec --no-startup-id firefox
 bindsym $mod+e exec --no-startup-id urxvt -e ranger
 
 # thunar
-bindsym $mod+p exec --no-startup-id thunar
+bindsym $mod+p exec --no-startup-id nautilus
 
 # new mail
 bindsym $mod+Shift+n exec --no-startup-id xdg-email
@@ -413,6 +426,9 @@ bindsym control+mod1+r exec --no-startup-id rofi-theme-selector
 
 # rofi fontawesome menu
 bindsym $mod+i exec --no-startup-id /home/anomy/.scripts/fontawesome-menu -f /home/anomy/.scripts/fa5-icon-list.txt
+
+# rofimoji
+bindsym $mod+j exec --no-startup-id rofimoji -a copy 
 
 #pavucontrol
 #arcolinux conflict
